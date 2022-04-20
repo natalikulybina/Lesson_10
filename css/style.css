@@ -40,7 +40,6 @@ ul {
 
 .submenu_after > a::after{
   content: "+";
-  border: 1px solid red;
   margin-left: 55px;  
 }
 
