@@ -51,12 +51,8 @@ ul {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 0;
   width: 250px;
-  transform: translateY(50%);
-  /*bottom: 100%;*/
   border-radius: 7px;
-
   background-color: dimgray;
   border: 1px solid grey;
 }
@@ -65,30 +61,17 @@ ul {
   text-align: left;
 }
 
-.submenu .submenu__product_2:hover .submenu--product {
+.submenu__position {
+  position: relative;
+}
+
+.submenu .submenu__item_2:hover .submenu {
   display: block;
 }
 
 .submenu--product {
-  display: none;
-  position: absolute;
-  z-index: 1;
   top: 0;
-  transform: translate(100%,50%);
-  /*left: 100px;*/
-  border-radius: 7px;
-  width: 250px;
-
-  background-color: dimgray;
-  border: 1px solid grey;
-}
-
-.submenu__product:last-child {
-  margin-bottom: 0px;
-}
-
-.submenu__product_2:first-child {
-  margin-top: 0px;
+  left: 100%;
 }
 
 .submenu__item:last-child {
