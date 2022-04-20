@@ -40,7 +40,8 @@ ul {
 
 .submenu_after > a::after{
   content: "+";
-  margin: 0 5px;  
+  border: 1px solid red;
+  margin-left: 55px;  
 }
 
 .menu__item:hover > .submenu {
