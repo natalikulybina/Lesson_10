@@ -1,0 +1,106 @@
+.content {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 100%;
+  background-color: dimgray;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu__item a {
+  display: inline-block;
+  line-height: 0;
+  padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+
+  color: aliceblue;
+}
+
+.menu_after > a::after{
+  content: "+";
+  margin: 0 5px;
+}
+
+.submenu_after > a::after{
+  content: "+";
+  margin: 0 5px;  
+}
+
+.menu__item:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 250px;
+  transform: translateY(50%);
+  /*bottom: 100%;*/
+  border-radius: 7px;
+
+  background-color: dimgray;
+  border: 1px solid grey;
+}
+
+.submenu {
+  text-align: left;
+}
+
+.submenu .submenu__product_2:hover .submenu--product {
+  display: block;
+}
+
+.submenu--product {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  transform: translate(100%,50%);
+  /*left: 100px;*/
+  border-radius: 7px;
+  width: 250px;
+
+  background-color: dimgray;
+  border: 1px solid grey;
+}
+
+.submenu__product:last-child {
+  margin-bottom: 0px;
+}
+
+.submenu__product_2:first-child {
+  margin-top: 0px;
+}
+
+.submenu__item:last-child {
+  margin-bottom: 0px;
+}
+
+.submenu__item:first-child {
+  margin-top: 0px;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
